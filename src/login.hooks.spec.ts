@@ -31,7 +31,7 @@ describe('useLogin specs', () => {
     expect(result.current.credential).toEqual(newCredential);
   });
 
-  it('should update user when it send valid credentials using onLogin', async () => {
+  it('should update user when it send valid user using onLogin', async () => {
     // Arrange
     const adminUser: User = { email: 'admin@email.com', role: 'admin' };
     const loginStub = jest.spyOn(api, 'login').mockResolvedValue(adminUser);
